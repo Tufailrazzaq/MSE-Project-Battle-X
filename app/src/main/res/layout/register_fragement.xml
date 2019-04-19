@@ -1,0 +1,79 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="15dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
+        android:id="@+id/teamName_layout"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/teamName_textBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Team Name"
+            android:inputType="text"
+            android:backgroundTint="@color/orangeTheme"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/universities_names"
+        android:layout_marginTop="20dp"
+        android:id="@+id/universityName_Spinner"
+        >
+
+    </Spinner>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/competitions_name"
+        android:layout_marginTop="20dp"
+        android:id="@+id/competitionName_Spinner"
+        >
+
+    </Spinner>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/dynamicLinearLayout"
+        android:layout_marginTop="20dp"
+        >
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Register"
+        android:background="@drawable/button_style"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:id="@+id/registerTeamBtn"
+        />
+
+    </LinearLayout>
+
+</ScrollView>
